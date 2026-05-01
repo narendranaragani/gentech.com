@@ -88,7 +88,9 @@ export function Portfolio() {
                   </p>
                   <div className="mt-6 pt-5 border-t border-border/40">
                     <Link
-                      to={`/work/${p.id}`}
+                      to="/work/$projectId"
+                      params={{ projectId: p.id }}
+
                       className="inline-flex items-center gap-2 text-sm font-bold text-foreground transition-colors hover:text-primary"
                     >
                       View Project

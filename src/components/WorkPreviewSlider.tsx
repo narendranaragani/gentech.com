@@ -76,9 +76,11 @@ export function WorkPreviewSlider() {
               return (
                 <Link
                   key={p.title}
-                  to={`/work/${p.id}`}
+                  to="/work/$projectId"
+                  params={{ projectId: p.id }}
                   className="min-w-0 shrink-0 grow-0 basis-[88%] px-2 sm:basis-[60%] sm:px-3 md:basis-[42%] lg:basis-[34%] xl:basis-[30%]"
                 >
+
                   <article
                     className={`group overflow-hidden rounded-3xl border border-border bg-card shadow-lg transition-all duration-500 ${
                       isActive
