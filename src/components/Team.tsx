@@ -1,7 +1,6 @@
 import { Linkedin, Github, MapPin, Briefcase, ArrowLeft } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 
-
 const team = [
   {
     name: "Narendra",
@@ -58,7 +57,6 @@ export function Team() {
             </Link>
           </div>
           <div className="mx-auto max-w-3xl text-center">
-
             <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-[var(--maroon)]">
               The team
             </span>
@@ -66,8 +64,8 @@ export function Team() {
               Three people. Senior across the stack.
             </h2>
             <p className="mt-8 text-base leading-relaxed text-muted-foreground sm:text-lg lg:text-xl">
-              You'll work directly with the people designing and building your
-              product — no account managers, no hand-offs, no offshore middle layer.
+              You'll work directly with the people designing and building your product — no account
+              managers, no hand-offs, no offshore middle layer.
             </p>
           </div>
         </div>
@@ -77,7 +75,10 @@ export function Team() {
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10">
           <div className="grid grid-cols-1 gap-16 md:grid-cols-3 md:gap-12">
             {team.map((m) => (
-              <div key={m.name} className="group flex flex-col items-center text-center md:items-start md:text-left">
+              <div
+                key={m.name}
+                className="group flex flex-col items-center text-center md:items-start md:text-left"
+              >
                 <div className="relative aspect-[3/4] w-full max-w-[340px] overflow-hidden rounded-3xl bg-[var(--sand)] shadow-lg transition-all duration-500 hover:shadow-xl">
                   <img
                     src={m.image}
@@ -138,8 +139,13 @@ export function Team() {
         <div className="mx-auto w-full max-w-7xl px-6 sm:px-10">
           <div className="grid grid-cols-2 gap-px overflow-hidden rounded-3xl border border-white/10 bg-white/10 md:grid-cols-4">
             {values.map((s) => (
-              <div key={s.l} className="bg-[var(--maroon)] px-6 py-14 text-center transition-colors hover:bg-white/5">
-                <div className="text-4xl font-bold tracking-tight text-[var(--cream)] sm:text-5xl">{s.v}</div>
+              <div
+                key={s.l}
+                className="bg-[var(--maroon)] px-6 py-14 text-center transition-colors hover:bg-white/5"
+              >
+                <div className="text-4xl font-bold tracking-tight text-[var(--cream)] sm:text-5xl">
+                  {s.v}
+                </div>
                 <div className="mt-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--cream)]/40">
                   {s.l}
                 </div>

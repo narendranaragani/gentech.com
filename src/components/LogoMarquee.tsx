@@ -1,6 +1,15 @@
 const logos = [
-  "Nxt Wave", "Coders Spark", "GoSure.AI", "Forty4 TECH",
-  "AnalyticsInsight", "EcommerceAdmin", "ForeverBuy", "EWA India", "HIRE MINS", "PRINTMAANIA", "DASH-IN"
+  "Nxt Wave",
+  "Coders Spark",
+  "GoSure.AI",
+  "Forty4 TECH",
+  "AnalyticsInsight",
+  "EcommerceAdmin",
+  "ForeverBuy",
+  "EWA India",
+  "HIRE MINS",
+  "PRINTMAANIA",
+  "DASH-IN",
 ];
 
 export function LogoMarquee() {

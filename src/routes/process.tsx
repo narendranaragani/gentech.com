@@ -7,9 +7,16 @@ export const Route = createFileRoute("/process")({
   head: () => ({
     meta: [
       { title: "Our Process — Trio Studio" },
-      { name: "description", content: "How we work — discover, design, develop, deploy. A calm, four-step engagement model." },
+      {
+        name: "description",
+        content:
+          "How we work — discover, design, develop, deploy. A calm, four-step engagement model.",
+      },
       { property: "og:title", content: "Our Process — Trio Studio" },
-      { property: "og:description", content: "A calm, four-step engagement model from discovery through deployment." },
+      {
+        property: "og:description",
+        content: "A calm, four-step engagement model from discovery through deployment.",
+      },
     ],
   }),
   component: ProcessPage,

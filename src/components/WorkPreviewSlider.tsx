@@ -5,14 +5,14 @@ import useEmblaCarousel from "embla-carousel-react";
 
 import { allProjects } from "@/data/projects";
 
-const previews = allProjects.map(p => ({
+const previews = allProjects.map((p) => ({
   id: p.id,
   title: p.title,
   type: p.category,
   metric: p.metric,
   desc: p.problemShort, // Using problem statement as short desc
   tags: p.stack,
-  img: p.image
+  img: p.image,
 }));
 
 export function WorkPreviewSlider() {
@@ -54,8 +54,8 @@ export function WorkPreviewSlider() {
               Recent products we've shipped
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:mt-5 sm:text-base md:text-lg">
-              Swipe through a curated reel of freelance engagements — from
-              E-commerce platforms to custom dashboards — each one shipped end-to-end.
+              Swipe through a curated reel of freelance engagements — from E-commerce platforms to
+              custom dashboards — each one shipped end-to-end.
             </p>
           </div>
           <Link
@@ -80,15 +80,11 @@ export function WorkPreviewSlider() {
                   params={{ projectId: p.id }}
                   className="min-w-0 shrink-0 grow-0 basis-[88%] px-2 sm:basis-[60%] sm:px-3 md:basis-[42%] lg:basis-[34%] xl:basis-[30%]"
                 >
-
                   <article
                     className={`group overflow-hidden rounded-3xl border border-border bg-card shadow-lg transition-all duration-500 ${
-                      isActive
-                        ? "scale-100 opacity-100 shadow-xl"
-                        : "scale-[0.94] opacity-60"
+                      isActive ? "scale-100 opacity-100 shadow-xl" : "scale-[0.94] opacity-60"
                     }`}
                   >
-
                     <div className="relative aspect-[16/11] overflow-hidden bg-[var(--sand)]">
                       <img
                         src={p.img}
@@ -151,7 +147,6 @@ export function WorkPreviewSlider() {
           </button>
         </div>
       </div>
-
     </section>
   );
 }

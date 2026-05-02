@@ -7,12 +7,12 @@ const categories = ["All", "Automation", "Full stack", "E-commerce", "Dashboards
 
 export function Portfolio() {
   const [active, setActive] = useState("All");
-  const projects = active === "All" ? allProjects : allProjects.filter((p) => p.category === active);
+  const projects =
+    active === "All" ? allProjects : allProjects.filter((p) => p.category === active);
 
   return (
     <>
       <section className="relative w-full overflow-hidden bg-background pt-16 pb-12 md:pt-24 md:pb-16">
-
         <div className="relative mx-auto w-full max-w-7xl px-6">
           <div className="mb-12">
             <Link
@@ -24,7 +24,6 @@ export function Portfolio() {
             </Link>
           </div>
           <div className="mx-auto max-w-3xl text-center">
-
             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">
               Portfolio
             </span>
@@ -32,10 +31,9 @@ export function Portfolio() {
               Selected Projects
             </h1>
 
-
-
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-              A curated selection of our work across automation, full-stack development, and digital products.
+              A curated selection of our work across automation, full-stack development, and digital
+              products.
             </p>
           </div>
           <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
@@ -43,10 +41,11 @@ export function Portfolio() {
               <button
                 key={c}
                 onClick={() => setActive(c)}
-                className={`rounded-full border px-6 py-2 text-sm font-medium transition-all ${active === c
+                className={`rounded-full border px-6 py-2 text-sm font-medium transition-all ${
+                  active === c
                     ? "border-primary bg-primary text-primary-foreground shadow-lg shadow-primary/20"
                     : "border-border/60 bg-card/50 text-muted-foreground hover:border-primary/30 hover:text-foreground"
-                  }`}
+                }`}
               >
                 {c}
               </button>
@@ -62,7 +61,6 @@ export function Portfolio() {
               <article
                 key={p.id}
                 className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5"
-
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-muted">
                   <img
@@ -79,7 +77,6 @@ export function Portfolio() {
                   </div>
                 </div>
                 <div className="flex flex-1 flex-col p-5">
-
                   <h3 className="text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
                     {p.title}
                   </h3>
@@ -90,7 +87,6 @@ export function Portfolio() {
                     <Link
                       to="/work/$projectId"
                       params={{ projectId: p.id }}
-
                       className="inline-flex items-center gap-2 text-sm font-bold text-foreground transition-colors hover:text-primary"
                     >
                       View Project

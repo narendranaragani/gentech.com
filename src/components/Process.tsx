@@ -1,6 +1,15 @@
-import { Compass, PencilRuler, Code2, Rocket, MessageSquare, FileText, GitPullRequest, LineChart, ArrowLeft } from "lucide-react";
+import {
+  Compass,
+  PencilRuler,
+  Code2,
+  Rocket,
+  MessageSquare,
+  FileText,
+  GitPullRequest,
+  LineChart,
+  ArrowLeft,
+} from "lucide-react";
 import { Link } from "@tanstack/react-router";
-
 
 const steps = [
   {
@@ -9,7 +18,8 @@ const steps = [
     week: "Week 1",
     description: "Understand goals, constraints, and the people the product serves.",
     deliverables: ["Goals workshop", "Tech audit", "Scoping doc"],
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
   },
   {
     icon: PencilRuler,
@@ -25,7 +35,8 @@ const steps = [
     week: "Week 4 – 9",
     description: "Build with senior engineers — clean code, tested, reviewed, demoed weekly.",
     deliverables: ["2-week sprints", "Weekly demos", "Staging env"],
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=900&q=80",
+    image:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=900&q=80",
   },
   {
     icon: Rocket,
@@ -33,15 +44,32 @@ const steps = [
     week: "Week 10+",
     description: "Ship to production with monitoring, documentation, and ongoing support.",
     deliverables: ["Production launch", "Runbooks", "30-day support"],
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80",
   },
 ];
 
 const principles = [
-  { icon: MessageSquare, title: "Direct communication", desc: "Slack with the people building it. No account managers." },
-  { icon: FileText, title: "Written by default", desc: "Decisions live in docs you can revisit, not meetings you missed." },
-  { icon: GitPullRequest, title: "Reviewed code", desc: "Every PR reviewed by a second senior engineer before merge." },
-  { icon: LineChart, title: "Measured outcomes", desc: "We define success metrics upfront and report against them." },
+  {
+    icon: MessageSquare,
+    title: "Direct communication",
+    desc: "Slack with the people building it. No account managers.",
+  },
+  {
+    icon: FileText,
+    title: "Written by default",
+    desc: "Decisions live in docs you can revisit, not meetings you missed.",
+  },
+  {
+    icon: GitPullRequest,
+    title: "Reviewed code",
+    desc: "Every PR reviewed by a second senior engineer before merge.",
+  },
+  {
+    icon: LineChart,
+    title: "Measured outcomes",
+    desc: "We define success metrics upfront and report against them.",
+  },
 ];
 
 export function Process() {
@@ -60,7 +88,6 @@ export function Process() {
             </Link>
           </div>
           <div className="mx-auto max-w-3xl text-center">
-
             <span className="text-[11px] uppercase tracking-[0.2em] text-[var(--brown-accent)]">
               Our process
             </span>
@@ -69,8 +96,8 @@ export function Process() {
             </h1>
 
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-              A four-phase rhythm we've refined across hundreds of engagements —
-              transparent, predictable, and quietly thorough.
+              A four-phase rhythm we've refined across hundreds of engagements — transparent,
+              predictable, and quietly thorough.
             </p>
           </div>
         </div>
@@ -82,9 +109,9 @@ export function Process() {
             {steps.map((s, i) => (
               <div
                 key={s.title}
-                className={`grid grid-cols-1 gap-8 overflow-hidden rounded-3xl border border-border bg-card p-8 md:grid-cols-2 md:gap-12 md:p-10 ${i % 2 === 1 ? "md:[&>div:first-child]:order-2" : ""
-                  }`}
-
+                className={`grid grid-cols-1 gap-8 overflow-hidden rounded-3xl border border-border bg-card p-8 md:grid-cols-2 md:gap-12 md:p-10 ${
+                  i % 2 === 1 ? "md:[&>div:first-child]:order-2" : ""
+                }`}
               >
                 <div className="flex flex-col justify-center">
                   <div className="flex items-center gap-3">

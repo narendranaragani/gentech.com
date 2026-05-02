@@ -81,14 +81,10 @@ export function TestimonialsSlider() {
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
             {testimonials.map((t) => (
-              <div
-                key={t.name}
-                className="min-w-0 shrink-0 grow-0 basis-full px-1 sm:px-3"
-              >
+              <div key={t.name} className="min-w-0 shrink-0 grow-0 basis-full px-1 sm:px-3">
                 <figure className="relative mx-auto flex max-w-3xl flex-col items-center rounded-3xl border border-border bg-card p-7 text-center shadow-lg sm:p-12">
                   <Quote
                     className="absolute left-6 top-6 h-8 w-8 text-[var(--brown-accent)]/20 sm:left-10 sm:top-10 sm:h-12 sm:w-12"
-
                     strokeWidth={1.2}
                   />
                   <blockquote className="text-balance text-lg font-light leading-relaxed text-foreground sm:text-2xl md:text-[26px] md:leading-[1.45]">
@@ -106,9 +102,7 @@ export function TestimonialsSlider() {
                       <div className="text-sm font-semibold text-foreground sm:text-base">
                         {t.name}
                       </div>
-                      <div className="text-xs text-muted-foreground">
-                        {t.role}
-                      </div>
+                      <div className="text-xs text-muted-foreground">{t.role}</div>
                       <div className="mt-1 font-serif text-xs tracking-[0.18em] text-[var(--brown-accent)]/70">
                         {t.company}
                       </div>
@@ -129,7 +123,7 @@ export function TestimonialsSlider() {
           >
             <ChevronLeft className="h-4 w-4" />
           </button>
-          
+
           <button
             onClick={() => embla?.scrollNext()}
             aria-label="Next testimonial"
@@ -138,7 +132,6 @@ export function TestimonialsSlider() {
             <ChevronRight className="h-4 w-4" />
           </button>
         </div>
-
       </div>
     </section>
   );

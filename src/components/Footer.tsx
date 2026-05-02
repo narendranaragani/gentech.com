@@ -45,17 +45,19 @@ export function Footer() {
               </div>
               <span className="text-xl font-bold tracking-tight text-foreground">
                 Gen<span className="text-[var(--brown-accent)]">Tech</span>
-                <span className="ml-1 text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground opacity-60">Studio</span>
+                <span className="ml-1 text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground opacity-60">
+                  Studio
+                </span>
               </span>
             </Link>
-            
+
             <p className="max-w-sm text-base leading-relaxed text-muted-foreground">
-              A boutique digital studio building high-performance web applications, 
-              cream architectures, and seamless user experiences for the modern web.
+              A boutique digital studio building high-performance web applications, cream
+              architectures, and seamless user experiences for the modern web.
             </p>
 
             <div className="flex items-center gap-4">
-              <a 
+              <a
                 href="mailto:support@gen-tech.in"
                 className="group flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-[var(--brown-accent)]"
               >
@@ -117,8 +119,8 @@ export function Footer() {
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   Accepting new projects for Q3 2026. Let's discuss your vision.
                 </p>
-                <Link 
-                  to="/contact" 
+                <Link
+                  to="/contact"
                   className="inline-flex text-[10px] font-bold uppercase tracking-widest text-[var(--brown-accent)] hover:underline"
                 >
                   Start a project
@@ -135,12 +137,16 @@ export function Footer() {
               © 2026 Gen Tech Studio. Built with deliberate care.
             </span>
             <div className="flex items-center gap-4 text-[10px] text-muted-foreground/60 uppercase tracking-widest">
-              <a href="#" className="hover:text-foreground">Privacy</a>
+              <a href="#" className="hover:text-foreground">
+                Privacy
+              </a>
               <span>·</span>
-              <a href="#" className="hover:text-foreground">Terms</a>
+              <a href="#" className="hover:text-foreground">
+                Terms
+              </a>
             </div>
           </div>
-          
+
           <div className="flex items-center gap-6">
             <div className="text-[10px] font-medium text-muted-foreground flex items-center gap-2">
               <span className="h-px w-8 bg-border" />

@@ -95,7 +95,11 @@
   --sage: oklch(0.68 0.04 150);
   --slate-soft: oklch(0.55 0.018 250);
   --gradient-cream: linear-gradient(135deg, oklch(0.98 0.012 88) 0%, oklch(0.93 0.022 78) 100%);
-  --gradient-radial: radial-gradient(ellipse at top, oklch(0.97 0.018 82) 0%, oklch(0.94 0.02 78) 100%);
+  --gradient-radial: radial-gradient(
+    ellipse at top,
+    oklch(0.97 0.018 82) 0%,
+    oklch(0.94 0.02 78) 100%
+  );
   --shadow-soft: 0 1px 2px oklch(0.4 0.1 20 / 0.04), 0 8px 24px -8px oklch(0.4 0.1 20 / 0.08);
   --shadow-glass: 0 1px 0 oklch(1 0 0 / 0.6) inset, 0 8px 32px -12px oklch(0.4 0.1 20 / 0.12);
   --chart-1: oklch(0.646 0.222 41.116);
@@ -202,20 +206,34 @@
 }
 
 /* Tinted Backgrounds */
-.bg-maroon-tint { background-color: oklch(0.975 0.01 20); }
-.bg-maroon-deep { 
-  background-color: var(--maroon); 
+.bg-maroon-tint {
+  background-color: oklch(0.975 0.01 20);
+}
+.bg-maroon-deep {
+  background-color: var(--maroon);
   color: var(--cream);
 }
-.bg-indigo-tint { background-color: oklch(0.985 0.01 250); }
-.bg-sage-tint { background-color: oklch(0.985 0.01 160); }
+.bg-indigo-tint {
+  background-color: oklch(0.985 0.01 250);
+}
+.bg-sage-tint {
+  background-color: oklch(0.985 0.01 160);
+}
 
 /* Floating Blobs */
 @keyframes float {
-  0% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(30px, -50px) scale(1.1); }
-  66% { transform: translate(-20px, 20px) scale(0.9); }
-  100% { transform: translate(0, 0) scale(1); }
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
 }
 
 .animate-float {
@@ -232,7 +250,11 @@
 }
 
 .hover-card-bg:hover {
-  background: linear-gradient(145deg, var(--color-card) 0%, oklch(from var(--accent-color) l c h / 0.03) 100%);
+  background: linear-gradient(
+    145deg,
+    var(--color-card) 0%,
+    oklch(from var(--accent-color) l c h / 0.03) 100%
+  );
 }
 
 .team-card {

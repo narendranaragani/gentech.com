@@ -1,5 +1,13 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Globe, ShoppingBag, LineChart, Sparkles, Layers, Server } from "lucide-react";
+import {
+  ArrowUpRight,
+  Globe,
+  ShoppingBag,
+  LineChart,
+  Sparkles,
+  Layers,
+  Server,
+} from "lucide-react";
 
 const projects = [
   {
@@ -59,9 +67,8 @@ export function FreelanceProjects() {
               Freelance projects we take on
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-              From early-stage MVPs to scale-ups replatforming legacy systems —
-              we partner with founders, product teams, and agencies on focused,
-              outcome-driven engagements.
+              From early-stage MVPs to scale-ups replatforming legacy systems — we partner with
+              founders, product teams, and agencies on focused, outcome-driven engagements.
             </p>
           </div>
           <Link
@@ -87,12 +94,8 @@ export function FreelanceProjects() {
                   {type}
                 </span>
               </div>
-              <h3 className="mt-6 text-xl font-semibold tracking-tight text-foreground">
-                {title}
-              </h3>
-              <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
-                {desc}
-              </p>
+              <h3 className="mt-6 text-xl font-semibold tracking-tight text-foreground">{title}</h3>
+              <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{desc}</p>
               <div className="mt-5 flex flex-wrap gap-1.5">
                 {tags.map((t) => (
                   <span
